@@ -5,8 +5,8 @@ import RedCounter from './Counter/RedCounter'
 const Hoc = () => {
     return (
         <div>
-            <RedCounter title="Red Counter" className={'text-red-700 font-semibold w-max mx-auto'} value={Counter} />
-            <RedCounter title="Blue Counter" className={'text-blue-700 font-semibold w-max mx-auto my-5'} value={Counter} />
+            <RedCounter title="Red Counter" className={'text-red-700 font-semibold'} value={Counter} />
+            <RedCounter title="Blue Counter" className={'text-blue-700 font-semibold my-5'} value={Counter} />
         </div>
     )
 }
