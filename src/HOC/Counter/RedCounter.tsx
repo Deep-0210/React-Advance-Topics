@@ -1,10 +1,21 @@
 import React from 'react'
 
-export default function RedCounter(props:any) {
+interface CounterTypes {
+    title: string
+    value: React.ComponentType<any>
+    className: string
+}
+
+export default function RedCounter(props: Readonly<CounterTypes>) {
     return (
         <div className={`${props.className} w-max mx-auto`}>
             {props.title}
-            <props.value />
+
+            <div className='flex gap-4'>
+                <div>
+                    <props.value />
+                </div>
+            </div>
         </div>
     )
 }

@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 // import ProductCard from './compound_component/ProductCard/ProductCard';
 // import Company_logo from './Image/Company_logo1.png'
-import Hoc from './HOC/Hoc';
+// import Hoc from './HOC/Hoc';
+import Index from './RenderProps/index';
 
 function App() {
   return (
@@ -17,7 +18,10 @@ function App() {
       </ProductCard> */}
 
       {/* HOC */}
-      <Hoc />
+      {/* <Hoc /> */}
+
+      {/* Render prop methods */}
+      <Index />
     </>
   );
 }
