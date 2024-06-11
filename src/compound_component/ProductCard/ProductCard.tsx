@@ -7,14 +7,11 @@ import ProductCardPrice from './ProductCardPrice/ProductCardPrice';
 
 export const CardContext = createContext<any>(false)
 
-function ProductCard({ children }: { children: ReactNode }) {
-    const [selected, setSelected] = useState<boolean>(false)
+function ProductCard({ children }: Readonly<{ children: ReactNode }>) {
 
     return (
         <div>
-            <CardContext.Provider value={selected}>
-                {children}
-            </CardContext.Provider>
+            {children}
         </div>
     )
 }
