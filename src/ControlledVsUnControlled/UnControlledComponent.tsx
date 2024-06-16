@@ -6,8 +6,8 @@ const UnControlledComponent = () => {
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
-    const name = (nameRef.current as unknown as HTMLInputElement)?.value as string;
-    const email = (emailRef.current as unknown as HTMLInputElement)?.value as string;
+    const name = (nameRef.current as unknown as HTMLInputElement)?.value;
+    const email = (emailRef.current as unknown as HTMLInputElement)?.value;
 
     if (name && email) {
       alert(`Name: ${name}, Email: ${email}`);
