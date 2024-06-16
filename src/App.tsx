@@ -1,17 +1,19 @@
 import React from 'react';
 import './App.css';
-import ProductCard from './compound_component/ProductCard/ProductCard';
-import Company_logo from './Image/Company_logo1.png'
+// import ProductCard from './compound_component/ProductCard/ProductCard';
+// import Company_logo from './Image/Company_logo1.png'
 // import Hoc from './HOC/Hoc';
-import Index from './RenderProps/index';
-import ControlledComponent from './ControlledVsUnControlled/ControlledComponent';
-import UnControlledComponent from './ControlledVsUnControlled/UnControlledComponent';
-import ErrorHandling from './ErrorHandling/ErrorHandling';
+// import Index from './RenderProps/index';
+// import ControlledComponent from './ControlledVsUnControlled/ControlledComponent';
+// import UnControlledComponent from './ControlledVsUnControlled/UnControlledComponent';
+// import ErrorHandling from './ErrorHandling/ErrorHandling';
 // import Main from './ErrroBoundries/Main';
-import Modal from './Portals/Modal';
-import Main from './ReactMemoComponent/Main'
+// import Modal from './Portals/Modal';
+// import Main from './ReactMemoComponent/Main'
+// import RenderLargeList from './RenderLargeList/RenderLargeList'
+import ReactLazyLoading from './ReactLazyLoading/ReactLazyLoading';
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
       <div className='flex justify-evenly'>
@@ -55,7 +57,13 @@ function App() {
       {/* <Modal /> */}
 
       {/* React use-memo */}
-      <Main />
+      {/* <Main /> */}
+
+      {/* Render Large List */}
+      {/* <RenderLargeList /> */}
+
+      {/* React Lazy Loading */}
+      <ReactLazyLoading />
     </>
   );
 }
