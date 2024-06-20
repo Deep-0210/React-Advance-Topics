@@ -12,6 +12,7 @@ import './App.css';
 // import Main from './ReactMemoComponent/Main'
 // import RenderLargeList from './RenderLargeList/RenderLargeList'
 import ReactLazyLoading from './ReactLazyLoading/ReactLazyLoading';
+import TodoRedux from './ReactStatManagement/Redux/Main';
 
 const App: React.FC = () => {
   return (
@@ -63,7 +64,10 @@ const App: React.FC = () => {
       {/* <RenderLargeList /> */}
 
       {/* React Lazy Loading */}
-      <ReactLazyLoading />
+      {/* <ReactLazyLoading /> */}
+
+      {/* Redux stat management */}
+      <TodoRedux />
     </>
   );
 }
