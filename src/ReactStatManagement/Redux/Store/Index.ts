@@ -8,7 +8,6 @@ const storeTodo = createSlice({
     reducers: {
         createTodo(state, action) {
             state.todoArray.push({ todo: action.payload })
-            console.log(todoArray, '---')
         }
     }
 });
