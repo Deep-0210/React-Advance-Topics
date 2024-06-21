@@ -1,15 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { createTodoAction } from '../Store/Index'
 import { useDispatch, useSelector } from 'react-redux'
-import { ToDo } from '../types'
+import { RootStat, ToDo } from '../types'
 
 const CreateTodo = () => {
     const [todo, setTodo] = useState<string>('')
 
     const dispatch = useDispatch()
 
-    // const userData = useSelector((stat: Array<ToDo>) => stat.values)
-    // console.log({ userData })
+    const userData = useSelector((stat: RootStat) => stat.todoArray)
+
+    useEffect(() => {
+        console.log(userData)
+    }, [userData])
 
     const submitTodo = () => {
         if (todo !== '') {
