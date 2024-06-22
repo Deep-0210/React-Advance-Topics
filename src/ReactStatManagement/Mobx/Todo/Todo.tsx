@@ -1,17 +1,14 @@
 import React, { useState } from 'react'
-import { createTodoAction } from '../Store/Index'
-import { useDispatch } from 'react-redux'
 import PrintTodo from './PrintTodo'
+import { todoStore } from '../Store'
 
 const CreateTodo = () => {
     const [todo, setTodo] = useState<string>('')
 
-    const dispatch = useDispatch()
 
     const submitTodo = () => {
         if (todo !== '') {
-            dispatch(createTodoAction.createTodo(todo))
-            setTodo('')
+           todoStore.addTodo(todo)
         }
     }
 

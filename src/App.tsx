@@ -11,8 +11,10 @@ import './App.css';
 // import Modal from './Portals/Modal';
 // import Main from './ReactMemoComponent/Main'
 // import RenderLargeList from './RenderLargeList/RenderLargeList'
-import ReactLazyLoading from './ReactLazyLoading/ReactLazyLoading';
-import TodoRedux from './ReactStatManagement/Redux/Main';
+// import ReactLazyLoading from './ReactLazyLoading/ReactLazyLoading';
+// import TodoRedux from './ReactStatManagement/Redux/Main';
+import Todo from './ReactStatManagement/Mobx/Todo/Todo'
+import CharCountRecoil from './ReactStatManagement/Recoil/Main';
 
 const App: React.FC = () => {
   return (
@@ -67,7 +69,13 @@ const App: React.FC = () => {
       {/* <ReactLazyLoading /> */}
 
       {/* Redux stat management */}
-      <TodoRedux />
+      {/* <TodoRedux /> */}
+
+      {/* MobX for global stat management */}
+      {/* <Todo /> */}
+
+      {/* Recoil for global stat management */}
+      <CharCountRecoil />
     </>
   );
 }
