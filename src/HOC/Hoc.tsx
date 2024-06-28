@@ -1,13 +1,16 @@
-import React from 'react'
 import Counter from './Counter/Counter'
-import RedCounter from './Counter/RedCounter'
-import GreenCounter from './Counter/GreenCounter'
+import GreenCounterHOC from './Counter/GreenCounter'
+import RedCounterHOC from './Counter/RedCounter'
+import TestComponent from './Counter/TestComponent'
+
+const RedCounterComponent = RedCounterHOC(TestComponent)
+const GreenCounterComponent = GreenCounterHOC(Counter)
 
 const Hoc = () => {
     return (
         <div>
-            <RedCounter title="Red Counter" className={'text-red-700 font-semibold'} value={Counter}/>
-            <GreenCounter title="Green Counter" className={'text-green-700 font-semibold my-5'} Value={Counter} />
+            <RedCounterComponent title="Red Counter" className="text-red-700 font-bold"/>
+            <GreenCounterComponent title="Green Counter" className="text-green-700 font-bold"/>
         </div>
     )
 }
